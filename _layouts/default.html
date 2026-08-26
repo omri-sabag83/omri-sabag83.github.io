@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+  <aside class="sidebar">
+
+    <img
+      class="profile-photo"
+      src="https://github.com/omri-sabag83.png?size=400"
+      alt="Omri Sabag"
+    >
+
+    <nav class="sidebar-nav">
+      <h3>Jump to</h3>
+
+      <a href="#introduction">Introduction</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#military-service">Military Service</a>
+      <a href="#skills">Skills</a>
+    </nav>
+
+  </aside>
+
+  <main class="main-content">
+
+    {{ content }}
+
+  </main>
+
+</div>
+
+</body>
+</html>
